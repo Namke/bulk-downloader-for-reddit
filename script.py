@@ -118,7 +118,7 @@ def download(submissions):
     subsLenght = len(submissions)
         
     for i in range(len(submissions)):
-        print(f"\n({i+1}/{subsLenght})",end=" - ")
+        # print(f"\n({i+1}/{subsLenght})",end=" - ")
         print(submissions[i]['POSTID'],
               f"r/{submissions[i]['SUBREDDIT']}",
               f"u/{submissions[i]['REDDITOR']}",
