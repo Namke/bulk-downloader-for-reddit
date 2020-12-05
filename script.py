@@ -75,8 +75,8 @@ def isPostExists(POST,directory):
     for extension in possibleExtensions:
 
         path = directory / Path(filename+extension)
-        if (len(path) > 255):
-            cut = len(path) - 255
+        if (len(str(path)) > 255):
+            cut = len(str(path)) - 255
             filename = filename[:len(filename) - cut]
             path = directory / Path(filename+extension)
 			
